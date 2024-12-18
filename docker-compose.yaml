@@ -1,0 +1,11 @@
+services:
+  discord-bot:
+    build: .
+    environment:
+      - BASE_URL=${BASE_URL}
+      - TOKEN=${TOKEN}
+      - CHANNEL_ID=${CHANNEL_ID}
+      - APPLICATION_ID=${APPLICATION_ID}
+      - GUILD_ID=${GUILD_ID}
+      - GATEWAY_URL=${GATEWAY_URL}
+    restart: unless-stopped
