@@ -1,1 +1,1 @@
-web: bin/discord_bot
+web: ./bin/discord_bot
